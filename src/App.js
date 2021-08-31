@@ -1,29 +1,31 @@
 
 import './App.css';
-import{Navbar,Nav, NavDropdown,Container,Form,Button,Table,Alert, Carousel,Spinner,Badge,ListGroup }from "react-bootstrap"
+import{Navbar,Nav, NavDropdown,Container,Form,Button,Alert, Carousel,Spinner,Badge,ListGroup }from "react-bootstrap"
 
 function App() {
   return (
     <div className="App">
-      <Navbar bg="light" expand="lg">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
-    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#link">Lien</Nav.Link>
-        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">ines</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-    </Navbar.Collapse>
+  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="me-auto">
+      <Nav.Link href="#features">Features</Nav.Link>
+      <Nav.Link href="#pricing">Pricing</Nav.Link>
+      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+      </NavDropdown>
+    </Nav>
+    
+  </Navbar.Collapse>
   </Container>
 </Navbar>
+<hr/>
 <div>
   <Badge bg="primary">Primary</Badge> <Badge bg="secondary">Secondary</Badge>{' '}
   <Badge bg="success">Success</Badge> <Badge bg="danger">Danger</Badge>{' '}
@@ -36,6 +38,7 @@ function App() {
   </Badge>{' '}
   <Badge bg="dark">Dark</Badge>
 </div>
+<hr/>
 <Form>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
@@ -56,6 +59,7 @@ function App() {
     Submit
   </Button>
 </Form>
+<hr/>
 <ListGroup>
   <ListGroup.Item variant="primary">Primary</ListGroup.Item>
   <ListGroup.Item action variant="secondary">
@@ -66,37 +70,7 @@ function App() {
     Info
   </ListGroup.Item> 
 </ListGroup>
-
-<Table striped bordered hover size="sm">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td colSpan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</Table>
-
+<hr/>
     <Alert variant="success">
     <Alert.Heading>Hey, nice to see you</Alert.Heading>
     <p>
